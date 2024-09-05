@@ -15,3 +15,5 @@ src file :
 
 - Main.py : Runs all of the files (riskmanagement, strategy, utils) all in one file by importing them (i see all the other files as indicators and i run them on a main file, that way is easier to import branches of code and apply them to another strategy
   or bot, instead of having to copy paste everytime. Mainly gives the output, and you can choose which csv file to run and capital to run by changing (Lines 15, and 28) 
+
+- load_data.py : processes the intraday data from the csv file . 
