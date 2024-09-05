@@ -9,4 +9,9 @@ src file :
   is the desired time you want to use when trading to get used to the trading hours which are high in volatility and liquidity.
 
 - RiskManagement.py; Nothing to explain simple risk management rules, capped at 1 trade per day max daily loss of 2.5%, max risk per trade 2.5% // and if price is break even risk is 1%, everytime you lose a trade lot size is halved by 2 meaning 1 --> 0.5
-  and when on a winning streak it goes from 1 --> 1.5 --> 2 --> 2.5 max 
+  and when on a winning streak it goes from 1 --> 1.5 --> 2 --> 2.5 max
+
+- Strategy.py : Simple moving average crossover file used in correlation with utils.py which dictates today's sentiment if we are shorting or longing a position. Capped at 1 trade per day (This needs to be optimized.)
+
+- Main.py : Runs all of the files (riskmanagement, strategy, utils) all in one file by importing them (i see all the other files as indicators and i run them on a main file, that way is easier to import branches of code and apply them to another strategy
+  or bot, instead of having to copy paste everytime. Mainly gives the output, and you can choose which csv file to run and capital to run by changing (Lines 15, and 28) 
